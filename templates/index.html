@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block content %}
+<div id="ideas">
+  <input id="newidea" type="text" value="" placeholder="type ideas/paste links here..."/>
+  <div id="ideaholder"></div>
+  <div class="bar"><div>
+    <img alt="wr173" src='data:image/gif;base64,R0lGODlhEAAQAJECAP//AAAAAAAAAAAAACH5BAEAAAIALAAAAAAQABAAAAIplI8SyQewGnovyhAovDhTe3QdxYgiUJpdqoJGi7GqbDYwV+OrpIi8UQAAOw=='/>
+    <span id="email"></span> 
+    <a style="float:none; display:inline-block" class="btn" href="/logout">logout</a>
+  </div></div>
+</div>
+
+<div id="writer">
+  <input id="title" type="text" value=""/>
+  <textarea id="textarea" placeholder="start typing here..."></textarea>
+  <div class="bar">
+    <div>
+      <a href="#" class="btn">Back</a>
+      <a id="preview" href="#" class="btn" target="_blank">Preview</a>
+      <button id="delete">Delete</button>
+      <button id="publish">Publish</button>
+    </div>
+  </div>
+</div>
+
+<div id="prelogin">
+  <div class="bar"><div>
+    <img alt="wr173" src='data:image/gif;base64,R0lGODlhEAAQAJECAP//AAAAAAAAAAAAACH5BAEAAAIALAAAAAAQABAAAAIplI8SyQewGnovyhAovDhTe3QdxYgiUJpdqoJGi7GqbDYwV+OrpIi8UQAAOw=='/> WR173.com
+    <button style="float:none; display:inline-block" class="browserid">login</button>
+  </div></div>
+
+  <div id="intro">
+    <div id="content">
+    {{intro}}
+    </div>
+  </div>
+
+  <button class="browserid">try it now!</button>
+</div>
+{% endblock %}
